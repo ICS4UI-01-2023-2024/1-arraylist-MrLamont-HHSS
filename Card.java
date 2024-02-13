@@ -18,6 +18,8 @@ public class Card {
         this.isFaceUp = false;
     }
 
+
+    // accessor methods or GETTERS
     public String getSuit(){
         return this.suit;
     }
@@ -39,6 +41,7 @@ public class Card {
         }
     }
 
+    // Mutator method or SETTER
     public void flip(){
         // if it is face up
         if(this.isFaceUp){
@@ -48,6 +51,20 @@ public class Card {
             // if it was face down, it is now face up
             this.isFaceUp = true;
         }
+    }
+
+
+    // format the strign we want to print out
+    // if we try and print the object
+    public String toString(){
+        String outputText = this.rank + " of " + this.suit;
+        // only give the text back if it is face up
+        if(this.isFaceUp){
+            return outputText;
+        }else{
+            return "A face down card";
+        }
+        
     }
 
     

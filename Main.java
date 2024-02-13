@@ -9,5 +9,17 @@ public class Main {
         card1.flip();
         System.out.println(card1.isFaceUp());
         System.out.println(card2.isFaceUp());
+    
+        System.out.println(card2);
+
+        Stack s = new Stack();
+        s.push(3);
+        s.push(5);
+        System.out.println(s.peek());
+        s.pop();
+        System.out.println(s.peek());
+        s.pop();
+        s.pop();
+    
     }
 }
